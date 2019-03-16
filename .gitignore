@@ -128,3 +128,11 @@ dmypy.json
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+ndicom_server/media/instances/*
+.idea/workspace.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/neurdicom.iml
+.idea/vcs.xml
+ndicom_server/apps/core/migrations/0005_auto_20190316_1604.py

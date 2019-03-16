@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z*l%m%=x3!*y8rp7pk)l&r@_!(q6=vn0gk)9+0q&3vno-@9ck&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -73,9 +73,9 @@ WSGI_APPLICATION = 'neurdicom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DB_NAME', 'neurdicom'),
-        'USER': os.environ.get('DB_USER', 'neurdicom'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'neurdicom'),
+        'NAME': os.environ.get('DB_NAME', 'postgres'),
+        'USER': os.environ.get('DB_USER', 'postgres'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'postgres'),
         'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
     }
 }
