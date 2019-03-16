@@ -1,4 +1,4 @@
-import pynetdicom3 as netdicom
+import pynetdicom as netdicom
 from pydicom.uid import *
 from pydicom import read_file, FileDataset
 from tornado import gen

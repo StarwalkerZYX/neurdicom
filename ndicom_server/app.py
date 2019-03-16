@@ -9,7 +9,7 @@ logging.basicConfig(format='%(levelname)s: %(asctime)s - %(message)s', datefmt='
 import django
 import sys
 from pydicom.uid import *
-from pynetdicom3 import *
+from pynetdicom import *
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'neurdicom.settings'
 django.setup()
